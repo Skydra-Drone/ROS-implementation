@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Scout Drone Sensor Nodes -->
+    
+    <!-- Camera Node -->
+    <node name="camera_node" pkg="scout_drone" type="camera_node.py" output="screen">
+        <param name="camera_source" value="0"/>  <!-- 0 for webcam, path for video file -->
+    </node>
+    
+    <!-- Thermal Camera Node -->
+    <node name="thermal_camera_node" pkg="scout_drone" type="thermal_camera_node.py" output="screen">
+        <!-- Set camera_source to device path for real thermal camera, or leave empty for simulation -->
+    </node>
+    
+    <!-- LiDAR Node -->
+    <node name="lidar_node" pkg="scout_drone" type="lidar_node.py" output="screen">
+        <!-- Set lidar_port to serial port for real LiDAR, or leave empty for simulation -->
+    </node>
+    
+</launch>
