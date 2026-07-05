@@ -1,10 +1,16 @@
 # Scout Drone ROS Implementation
 
-A comprehensive ROS-based suite for drone-based perception, sensor fusion, and geolocation. This repository implements a "Scout" drone system capable of detecting targets (YOLOv8), thermal sensing, and precise ground-coordinate calculation.
+A comprehensive ROS-based suite for drone-based perception, sensor fusion, and geolocation. This repository implements a "Scout" drone system capable of detecting targets (YOLOv8), thermal sensing, and precise ground-coordinate calculation
+
+<img width="939" height="713" alt="image" src="https://github.com/user-attachments/assets/7967cd6a-b916-4974-82ed-a486067750d3" />
+
+<img width="1432" height="297" alt="image" src="https://github.com/user-attachments/assets/c18c6ed7-59de-4a53-a404-282eca91b349" />
+
+
 
 ---
 
-## 🚀 Key Modules
+##  Key Modules
 
 ### 1. Perception & YOLO Detection
 Implements a real-time object detection pipeline.
@@ -51,7 +57,7 @@ source devel/setup.bash
 
 ---
 
-## 🚦 How to Run
+##  How to Run
 
 ### Testing with Simulation (No Hardware)
 The project includes a `test_perception.launch` file that simulates a drone flying while running the full perception pipeline.
@@ -72,7 +78,7 @@ Modify the `CAMERA_SOURCE` or `LIDAR_PORT` parameters in the respective node scr
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 - `camera_yolo/`: YOLOv8 node and custom message definitions.
 - `geolocation/`: The core math engine for target positioning and fake drone data publishers.
 - `Lidar-Camera-thermal/`: Implementation of the physical/simulated sensor nodes.
